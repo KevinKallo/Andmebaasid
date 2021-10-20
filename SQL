@@ -1,1 +1,7 @@
-where price BETWEEN 0 and 100
+SELECT first_name, last_name, group_id, `Group` .name 
+FROM`Payer` 
+LEFT JOIN `Group` ON Payer.group_id = `Group` .id
+
+INSERT INTO Parent (firstName, lastName, group_id) VALUES ('Homeri paps', 'Garner')
+
+INSERT INTO Parent (player_id, parent_id) VALUES (1,1)
