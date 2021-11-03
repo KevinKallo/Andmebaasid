@@ -5,3 +5,6 @@ LEFT JOIN `Group` ON Payer.group_id = `Group` .id
 INSERT INTO Parent (firstName, lastName, group_id) VALUES ('Homeri paps', 'Garner')
 
 INSERT INTO Parent (player_id, parent_id) VALUES (1,1)
+
+
+SELECT first_ame, last_name, PlayerParent.parent_id, Parent.first_name, Parent.last_name FROM Player LEFT JOIN PlayerParent ON Player.id = PlayerParent.player_id LEFT JOIN Parent ON Parent.id = PlayerParent.parent_id
